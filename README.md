@@ -35,7 +35,7 @@ To run the web app, execute the following command:
 python myapp.py
 ```
 
-Visit [http://localhost:5000/bill](http://localhost:5000/bill) in your web browser to access the web interface.
+Visit [http://localhost:5000/](http://localhost:5000/) in your web browser to access the web interface.
 
 ## Requirements
 
