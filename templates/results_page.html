@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flatmate Bill</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .payment {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .name {
+            font-weight: bold;
+            color: #3366cc; /* Change the color as desired */
+        }
+
+        .amount {
+            color: #009900; /* Change the color as desired */
+        }
+
+        .period {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flatmate Bill</h1>
+    <hr>
+    <div class="period">
+        Period <span class="amount">{{period}}</span>
+    </div>
+    <hr>
+    <div class="payment">
+        <span class="name">{{name1}}</span> pays <span class="amount">{{amount1}}</span>
+    </div>
+    <div class="payment">
+        <span class="name">{{name2}}</span> pays <span class="amount">{{amount2}}</span>
+    </div>
+    <hr>
+</body>
+</html>

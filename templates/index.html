@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flatmates Bill</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #3366cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #004080;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to Flatmates Bill</h1>
+    <p>This is a homage to our Flatmates Bill application. Keep track of shared expenses and manage your bills
+        seamlessly.</p>
+    <a href="{{url_for('bill_form_page')}}">Go to Flatmates Bill</a>
+</body>
+</html>

@@ -3,8 +3,8 @@ import webbrowser
 
 from fpdf import FPDF
 
-from bill import Bill
-from flatmate import Flatmate
+from flatemates_bill.bill import Bill
+from flatemates_bill.flatmate import Flatmate
 
 
 class PdfReport:

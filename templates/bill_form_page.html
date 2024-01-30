@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Bill Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #3366cc; /* Change the color as desired */
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #ccc;
+            margin: 20px 0;
+        }
+
+        button {
+            background-color: #4caf50; /* Green */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+<h2>The Bill Form</h2>
+<p>Fill in the form and click the 'submit' button to get results.</p>
+<form action="/results" method="post">
+    <label for="amount">{{billform.amount.label}}</label>
+    {{billform.amount}}
+    <br>
+    <label for="period">{{billform.period.label}}</label>
+    {{billform.period}}
+    <hr>
+    <p>First Flatmate</p>
+    <label for="name1">{{billform.name1.label}}</label>
+    {{billform.name1}}
+    <br>
+    <label for="days1">{{billform.days1.label}}</label>
+    {{billform.days1}}
+    <hr>
+    <p>Second Flatmate</p>
+    <label for="name2">{{billform.name2.label}}</label>
+    {{billform.name2}}
+    <br>
+    <label for="days2">{{billform.days2.label}}</label>
+    {{billform.days2}}
+    <hr>
+    {{billform.button}}
+</form>
+</body>
+</html>

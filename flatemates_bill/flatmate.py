@@ -1,4 +1,4 @@
-from bill import Bill
+from flatemates_bill.bill import Bill
 
 
 class Flatmate:
